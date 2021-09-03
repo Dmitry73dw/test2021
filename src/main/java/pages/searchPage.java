@@ -12,8 +12,41 @@ public class searchPage {
     @FindBy (css = "input.gLFyf.gsfi")
     public WebElement searchInput;
 
-    @FindBy (css = "div.BRpYC div.TIGsTb")
+    @FindBy (css = "div[jsname=j93WEe]")
     public WebElement openbracket ;
+
+    @FindBy (css = "div[jsname=N10B9]")
+    public WebElement one;
+
+    @FindBy (css = "div[jsname=XSr6wc]")
+    public WebElement plus;
+
+    @FindBy (css = "div[jsname=lVjWed]")
+    public WebElement two;
+
+    @FindBy (css = "div[jsname=qCp9A]")
+    public WebElement closebracket;
+
+    @FindBy (css = "div[jsname=YovRWb]")
+    public WebElement ymnog;
+
+    @FindBy (css = "div[jsname=KN1kY]")
+    public WebElement tri;
+
+    @FindBy (css = "div[jsname=pPHzQc]")
+    public WebElement minys;
+
+    @FindBy (css = "div[jsname=xAP7E]")
+    public WebElement fo;
+
+    @FindBy (css = "div[jsname=bkEvMb]")
+    public WebElement zero;
+
+    @FindBy (css = "div[jsname=WxTTNd]")
+    public WebElement delit;
+
+    @FindBy (css = "div[jsname=Ax5wH]")
+    public WebElement fife;
 
 
     public searchPage(WebDriver driver) {

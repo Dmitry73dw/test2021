@@ -25,10 +25,21 @@ public class GoogleTests {
     public void test1() {
         driver.get("http://google.com");
        searchPage.searchInput.sendKeys("Калькулятор", Keys.ENTER);
-        searchPage.openbracket.sendKeys("1+5", Keys.ENTER);
+        searchPage.openbracket.click();
+        searchPage.one.click();
+        searchPage.plus.click();
+        searchPage.two.click();
+        searchPage.closebracket.click();
+        searchPage.ymnog.click();
+        searchPage.tri.click();
+        searchPage.minys.click();
+        searchPage.fo.click();
+        searchPage.zero.click();
+        searchPage.delit.click();
+        searchPage.fife.click();
     }
-  // @AfterAll
- //   public static void teardown(){
-  //      driver.quit();
+  //@AfterAll
+   //public static void teardown(){
+    //    driver.quit();
    // }
 }
