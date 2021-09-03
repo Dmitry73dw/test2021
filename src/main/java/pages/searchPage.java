@@ -48,6 +48,14 @@ public class searchPage {
     @FindBy (css = "div[jsname=Ax5wH]")
     public WebElement fife;
 
+    @FindBy (css = "div[jsname=Pt8tGc]")
+    public WebElement ravno;
+
+    @FindBy (css = "div[jsname=abcgof]")
+    public WebElement six;
+
+    @FindBy (css = "div[jsname=aN1RFf]")
+    public WebElement sin;
 
     public searchPage(WebDriver driver) {
         initElements(driver, this);
