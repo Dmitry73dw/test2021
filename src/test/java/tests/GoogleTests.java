@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.searchPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class GoogleTests {
@@ -43,6 +44,8 @@ public class GoogleTests {
         searchPage.delit.click();
         searchPage.fife.click();
         searchPage.ravno.click();
+        assertEquals("1", searchPage.getSearchresalt());
+        assertEquals("(1 + 2) × 3 - 40 ÷ 5 =", searchPage.getSearchmemory());
     }
     @Test
     public void test2() {
@@ -52,6 +55,8 @@ public class GoogleTests {
         searchPage.delit.click();
         searchPage.zero.click();
         searchPage.ravno.click();
+        assertEquals("Infinity", searchPage.getSearchresalt());
+        assertEquals("6 ÷ 0 =", searchPage.getSearchmemory());
     }
     @Test
     public void test3() {
@@ -59,6 +64,8 @@ public class GoogleTests {
         searchPage.searchInput.sendKeys("Калькулятор", Keys.ENTER);
         searchPage.sin.click();
         searchPage.ravno.click();
+        assertEquals("Error", searchPage.getSearchresalt());
+        assertEquals("sin() =", searchPage.getSearchmemory());
     }
   @AfterAll
    public static void teardown(){

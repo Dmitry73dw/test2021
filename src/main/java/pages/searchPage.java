@@ -12,6 +12,7 @@ public class searchPage {
     @FindBy (css = "input.gLFyf.gsfi")
     public WebElement searchInput;
 
+
     @FindBy (css = "div[jsname=j93WEe]")
     public WebElement openbracket ;
 
@@ -56,6 +57,20 @@ public class searchPage {
 
     @FindBy (css = "div[jsname=aN1RFf]")
     public WebElement sin;
+
+
+    @FindBy (css = "#cwos.qv3Wpe")
+    private WebElement searchresalt;
+
+    @FindBy (css = "span.vUGUtc")
+    private WebElement searchmemory;
+
+    public String getSearchresalt(){
+      return   searchresalt.getText();
+    }
+    public String getSearchmemory(){
+        return   searchmemory.getText();
+    }
 
     public searchPage(WebDriver driver) {
         initElements(driver, this);
